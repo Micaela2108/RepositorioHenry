@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -19,28 +20,27 @@
         <a href=".//index.html">
             <h1>MiLuz</h1>
         </a>
-        <button type="button">Carrito<i class="fa-solid fa-cart-shopping"></i></button>
-        <nav class="navbar navbar-expand-lg mx-auto">
-            <ul class="NavBar_List top-0">
+        <nav>
+            <ul>
                 <li> 
-                    <a class="nav-link active" class="icon-home" href="../index.html">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>
                 <li>
-                    <a class="nav-link dropdown-toggle" class="icon-folder-open" href=".//index.html">Acerca de</a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item"> <a class="nav-link active" href="#">Nuestro catalogo</a> </li>
-                        <li class="dropdown-item"> <a class="nav-link active" href="#">Envios a domicilio</a> </li>
-                        <li class="dropdown-item"> <a class="nav-link active" href="#">La tienda</a> </li>
+                    <a href=".//index.html">Acerca de</a>
+                    <ul>
+                        <li> <a href="#">Nuestro catalogo</a> </li>
+                        <li> <a href="#">Envios a domicilio</a> </li>
+                        <li> <a href="#">La tienda</a> </li>
                     </ul>
                 </li>
                 <li>
-                    <a class="nav-link active" class="icon-airplane" href="./pages/Servicios.html">Servicios</a>
+                    <a href="./pages/Servicios.html">Servicios</a>
                 </li>
                 <li>
-                    <a class="nav-link active" class="icon-bubbles2" href="./pages/Contacto.html">Contacto</a>
+                    <a href="./pages/Contacto.html">Contacto</a>
                 </li>
                 <li>
-                    <a class="nav-link active" class="icon-book" href="./pages/politicas.html">Politicas de Seguridad</a>
+                    <a href="./pages/politicas.html">Politicas de Seguridad</a>
                 </li>
             </ul>
         </nav>
@@ -48,14 +48,14 @@
     </header>
   	
         <h1>FORMULARIO</h1>
-        <form action="../assets/php/index.php" method="post">
+        <form action="../assets/php/index.php">
 
-            <input type="text" placeholder=" Escriba su nombre aqui" name="nombre" required class="input"> <br><br>
-            <input type="text" placeholder=" Escriba su apellido aqui" name="apellido"required class="input"> <br><br>
-            <input type="mail" placeholder=" Escriba su mail aqui" name="mail"required class="input"> <br><br> 
+            <input type="text" placeholder=" Escriba su nombre aqui" name="nombre" required> <br><br>
+            <input type="text" placeholder=" Escriba su apellido aqui" name="apellido"required> <br><br>
+            <input type="mail" placeholder=" Escriba su mail aqui" name="mail"required> <br><br> 
 
-               <label for="Procedencia" class="etiqueta_p">Procedencia:</label>
-                 <select required id="Procedencia" class="Procedencia" onchange="ocultarLabel()">
+               <label for="Procedencia">Procedencia:</label>
+                 <select required id="Procedencia" onchange="ocultarLabel()">
                  <option value=""> </option>
                      <option value="America">America</option>
                      <option value="Antartida">Antartida</option>
@@ -68,8 +68,8 @@
                  Opinion: <br> <br>
                  <textarea  cols="40" rows="8" placeholder=" Dejenos saber su Opinion" required></textarea> <br>
             
-                 <input type="reset" value="Borrar" class="button">
-                 <input type="submit" value="Enviar" class="button">
+                 <input type="reset" value="Borrar">
+                 <input type="submit" value="Enviar">
            
         </form>
     <script>
